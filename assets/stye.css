@@ -24,4 +24,11 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    font-size: 25px;
+}
+
+nav :hover{
+    transition-duration: 200ms;
+    text-shadow: 6px 3px 5px black;
+    color:  #C5D8D1;
 }
