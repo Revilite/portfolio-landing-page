@@ -1,15 +1,23 @@
+:root{
+    /* Color Pallete */
+    --darkBlue: #12263A;
+    --lightBlue: #06BCC1;
+    --opal: #C5D8D1;
+    --bage: #F4EDEA;
+    --lightYellow: #F4D1AE;
+}
 
-/* Color Pallete: #12263A, #06BCC1, #C5D8D1, #F4EDEA, #F4D1AE  */
+
 body {
-    background-color: #F4EDEA;
+    background-color: var(--bage);
     margin: 0px;
 }
 
 header {
-    background-color: #06BCC1;
+    background-color: var(--lightBlue);
     padding: 20px;
     margin: 0px;
-    border: 10px solid #12263A;
+    border: 10px solid var(--darkBlue);
 
 }
 
@@ -30,13 +38,13 @@ nav {
 nav :hover{
     transition-duration: 200ms;
     text-shadow: 6px 3px 5px black;
-    color:  #C5D8D1;
+    color:  var(--opal);
 }
 
 figure {
     display:flex; 
     justify-content: center;
-    background-color: #C5D8D1;
+    background-color: var(--bage);
     height: 325px;
     margin: 0px;
 }
@@ -44,8 +52,10 @@ figure {
 article{
     display:flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color: var(--bage);
 }
 
 .mainProj {
@@ -55,4 +65,37 @@ article{
     width: 500px;
     margin: 0px;
     border: 2px solid black;
+    border-radius: 15px 15px 0 0;
+}
+
+.leftContent{
+    display: flex;
+    flex-direction:column;
+    padding-right: 300px;
+    width: 300px;
+    height: 300px;
+}
+
+.rightContent{
+    display: flex;
+    flex-direction: column;
+    padding-left: 300px;
+    width: 300px;
+    height: 300px;
+}
+
+aside{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+div p {
+    width: 250px;
 }
