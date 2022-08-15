@@ -3,14 +3,15 @@
     --darkBlue: #12263A;
     --lightBlue: #06BCC1;
     --opal: #C5D8D1;
-    --bage: #F4EDEA;
+    --darkGrey: #242526;
     --lightYellow: #F4D1AE;
 }
 
 
 body {
-    background-color: var(--bage);
+    background-color: var(--darkGrey);
     margin: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 header {
@@ -44,18 +45,18 @@ nav :hover{
 figure {
     display:flex; 
     justify-content: center;
-    background-color: var(--bage);
+    background-color: var(--darkGrey);
     height: 325px;
     margin: 0px;
 }
 
-article{
+main{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: var(--bage);
+    background-color: var(--darkGrey);
 }
 
 .mainProj {
@@ -65,23 +66,42 @@ article{
     width: 500px;
     margin: 0px;
     border: 2px solid black;
-    border-radius: 15px 15px 0 0;
+    background-color: white;
+    
+   
 }
 
 .leftContent{
     display: flex;
     flex-direction:column;
-    padding-right: 300px;
+    padding-right: 150px;
     width: 300px;
     height: 300px;
+    margin-top: -200px;
 }
 
 .rightContent{
     display: flex;
     flex-direction: column;
-    padding-left: 300px;
+    padding-left: 150px;
     width: 300px;
     height: 300px;
+    margin-top: -200px;
+}
+
+.centerContent{
+    color: white;
+    font-size: 25px;
+}
+
+.centerContent p{
+    width: 500px;
+    font-size: 18px;
+}
+
+.card {
+    border: 2px solid black;
+    background-color:white;
 }
 
 aside{
