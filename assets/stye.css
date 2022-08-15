@@ -48,7 +48,7 @@ article{
     align-items: center;
 }
 
-section {
+.mainProj {
     display: flex;
     flex-direction: column;
     align-items: center;
