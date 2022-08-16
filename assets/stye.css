@@ -15,6 +15,9 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     background-color: var(--lightBlue);
     padding: 20px;
     margin: 0px;
@@ -27,6 +30,7 @@ header h1 {
     font-size: 45px;
     align-items: center; 
     flex-direction: column;
+    flex-wrap: wrap;
 }
  
 nav {
@@ -34,6 +38,7 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     font-size: 25px;
+    flex-wrap: wrap;
 }
 
 nav :hover{
@@ -45,6 +50,7 @@ nav :hover{
 figure {
     display:flex; 
     justify-content: center;
+    align-content: center;
     background-color: var(--darkGrey);
     height: 325px;
     margin: 0px;
@@ -63,6 +69,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     width: 650px;
     margin: 0px;
     border: 2px solid black;
@@ -73,7 +80,8 @@ main{
 
 .leftContent{
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
+    flex-wrap: wrap;
     padding-right: 150px;
     width: 300px;
     height: 300px;
@@ -82,7 +90,8 @@ main{
 
 .rightContent{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding-left: 150px;
     width: 300px;
     height: 300px;
@@ -90,11 +99,15 @@ main{
 }
 
 .centerContent{
+    display: flex;
+    flex-wrap: wrap;
     color: white;
     font-size: 25px;
 }
 
 .centerContent p{
+    display: flex;
+    flex-wrap: wrap;
     width: 500px;
     font-size: 18px;
 }
@@ -135,6 +148,7 @@ footer {
     padding: 20px;
     font-size: 35px;
     font-weight: bolder;
+    flex-wrap: wrap;
 }
 
 footer ul{
@@ -146,4 +160,29 @@ footer ul{
 
 footer li {
     padding: 5px;
+}
+
+
+
+@media screen and (max-width: 992px){
+    nav{
+        width: 25%;
+
+    }
+    nav h3{
+        padding-left: 25px;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    nav {
+        width: 100%;
+    }
 }
