@@ -22,6 +22,7 @@ header {
     padding: 20px;
     margin: 0px;
     border: 10px solid var(--darkBlue);
+    width: 100%;
 
 }
 
