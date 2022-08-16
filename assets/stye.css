@@ -186,4 +186,17 @@ footer :visited{
     nav {
         margin: 4px;
     }
+    
+    .leftContent {
+        width: 100%;
+    }
+    .rightContent{
+        width: 100%;
+
+    }
+    .mainProj{
+        width: 100%;
+    }
+    
+
 }
