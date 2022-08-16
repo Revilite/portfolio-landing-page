@@ -17,7 +17,7 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     background-color: var(--lightBlue);
     padding: 20px;
     margin: 0px;
@@ -68,7 +68,7 @@ figure {
 main{
     display:flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     background-color: var(--darkGrey);
@@ -77,7 +77,7 @@ main{
 .mainProj {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
     flex-wrap: wrap;
     width: 650px;
     margin: 0px;
@@ -89,8 +89,8 @@ main{
 
 .leftContent{
     display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
+    flex-direction:column;
+    /* flex-wrap: wrap; */
     padding-right: 200px;
     width: 300px;
     height: 300px;
@@ -99,12 +99,12 @@ main{
 
 .rightContent{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
     padding-left: 150px;
     width: 300px;
     height: 300px;
-    margin-top: -250px;
+    margin-top:-250px;
 }
 
 .centerContent{
@@ -181,25 +181,8 @@ footer :visited{
 
 
 
-@media screen and (max-width: 992px){
-    nav{
-        width: 25%;
-
-    }
-    nav h3{
-        padding-left: 25px;
-    }
-    
-}
-
-@media screen and (max-width: 768px){
-    nav{
-        width: 50%;
-    }
-}
-
 @media screen and (max-width: 576px){
     nav {
-        width: 100%;
+        margin: 4px;
     }
 }
