@@ -39,6 +39,15 @@ nav {
     justify-content: space-around;
     font-size: 25px;
     flex-wrap: wrap;
+    color: black;
+}
+
+nav :link{
+    color: black;
+}
+
+nav :visited{
+    color: black;
 }
 
 nav :hover{
@@ -82,7 +91,7 @@ main{
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
-    padding-right: 150px;
+    padding-right: 200px;
     width: 300px;
     height: 300px;
     margin-top: -200px;
@@ -160,6 +169,14 @@ footer ul{
 
 footer li {
     padding: 5px;
+}
+
+footer :link{
+    color: black;
+}
+
+footer :visited{
+    color: black;
 }
 
 
