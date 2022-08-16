@@ -123,5 +123,22 @@ div p {
 
 footer {
     display: flex;
-   
+    margin-top: 357px;
+    background-color: var(--lightBlue);
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+footer ul{
+    display:flex; 
+    flex-direction: column;
+    color: black;
+    margin-top: -20px;
+}
+
+footer li {
+    padding: 5px;
 }
